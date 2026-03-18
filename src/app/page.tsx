@@ -34,7 +34,34 @@ const projects = [
       "Understands food imagery to provide nutritional insights and contextual recommendations.",
     tags: ["Computer Vision", "Nutrition AI", "LLMs", "Product"],
   },
-  
+  {
+    title: "PrepAI : Interview Prep MAS",
+    tagline: "Multi-agent interview preparation assistant",
+    description:
+      "A multi-agent system that simulates interview workflows, evaluates responses, and provides structured preparation support for technical and behavioral interviews.",
+    tags: ["Multi-Agent", "Interview AI", "LLMs", "Evaluation", "Career Tech"],
+  },
+  {
+    title: "Speech Analyzer",
+    tagline: "Audio and speech intelligence system",
+    description:
+      "A machine learning project focused on extracting meaningful insights from speech and audio signals using signal processing, feature engineering, and predictive modeling techniques.",
+    tags: ["Audio ML", "Signal Processing", "Speech Analysis", "Python", "ML"],
+  },
+  {
+    title: "Job Applying Buddy",
+    tagline: "AI copilot for resumes and cover letters",
+    description:
+      "An agentic job application assistant that helps tailor resumes, generate cover letters, and streamline personalized application workflows for different roles.",
+    tags: ["Agentic AI", "CrewAI", "Resume AI", "Supabase", "Automation"],
+  },
+  {
+    title: "Jazz Music Generation LSTM",
+    tagline: "Generative deep learning for symbolic music creation",
+    description:
+      "A sequence modeling project that uses recurrent neural networks to learn musical structure and generate jazz-inspired melodies from training data.",
+    tags: ["Deep Learning", "LSTM", "Generative AI", "Music AI", "PyTorch"],
+  },
 ];
 
 export default function Home() {
