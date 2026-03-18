@@ -1,4 +1,3 @@
-import type { ReactNode } from "react";
 import { Button } from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
 
@@ -7,7 +6,7 @@ interface ProjectCardProps {
   tagline: string;
   description: string;
   tags: string[];
-  href?: string;
+  github?: string;
   className?: string;
 }
 
@@ -16,7 +15,7 @@ export function ProjectCard({
   tagline,
   description,
   tags,
-  href = "#",
+  github,
   className,
 }: ProjectCardProps) {
   return (
@@ -46,9 +45,13 @@ export function ProjectCard({
         ))}
       </div>
       <div className="mt-4">
-        <Button variant="secondary" size="sm" className="w-max">
-          <span>View Case Study</span>
-        </Button>
+        {github && (
+          <a href={github} target="_blank" rel="noopener noreferrer">
+            <Button variant="secondary" size="sm" className="w-max">
+              <span>View Project Code</span>
+            </Button>
+          </a>
+        )}
       </div>
     </div>
   );
