@@ -4,6 +4,7 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 import type { ButtonHTMLAttributes, ReactNode } from "react";
 
+// Variants centralize button styling so every CTA stays visually consistent.
 const buttonVariants = cva(
   "inline-flex items-center justify-center rounded-full text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-60 gap-2",
   {
@@ -45,6 +46,7 @@ export function Button({
   ...props
 }: ButtonProps) {
   return (
+    // `cn` lets variant classes and one-off overrides compose without duplicated Tailwind strings.
     <button className={cn(buttonVariants({ variant, size, className }))} {...props}>
       {leftIcon && <span className="mr-1.5">{leftIcon}</span>}
       <span>{children}</span>

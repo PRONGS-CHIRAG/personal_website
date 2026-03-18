@@ -1,18 +1,22 @@
 @import "tailwindcss";
 
+/* A global box model reset keeps spacing predictable across custom card layouts. */
 * {
   box-sizing: border-box;
 }
 
+/* The page fills the viewport so hero and section spacing behave consistently. */
 body {
   margin: 0;
   min-height: 100vh;
 }
 
+/* Links are styled with utilities in components rather than browser defaults. */
 a {
   text-decoration: none;
 }
 
+/* Custom scrollbar styling matches the neon-accent visual direction of the site. */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -25,4 +29,3 @@ a {
   background: linear-gradient(180deg, #ff4fa3, #d946ef, #8b5cf6);
   border-radius: 999px;
 }
-

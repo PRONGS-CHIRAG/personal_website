@@ -15,6 +15,7 @@ export function SectionHeader({
   className,
 }: SectionHeaderProps) {
   return (
+    // This shared heading wrapper keeps typography and spacing aligned across sections.
     <div className={cn("max-w-3xl", className)}>
       {eyebrow && (
         <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-zinc-400">

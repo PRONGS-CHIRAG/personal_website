@@ -11,8 +11,8 @@ import { StatCard } from "@/components/cards/StatCard";
 import { TimelineItem } from "@/components/cards/TimelineItem";
 import { HighlightCard } from "@/components/cards/HighlightCard";
 
+// Centralized project content keeps the card grid declarative and easy to update.
 const projects = [
-  
   {
     title: "MedAssist MAS",
     tagline: "Multi-agent healthcare triage assistant with red-flag detection",
@@ -84,6 +84,7 @@ export default function Home() {
         <Section id="home" className="pt-10">
           <div className="grid gap-12 md:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)] md:items-center">
             <div>
+              {/* This opening block establishes the portfolio positioning in one scan. */}
               <Badge className="mb-4 bg-white/10 text-xs font-medium text-pink-200">
                 AI Engineer • Entrepreneur • Builder of Intelligent Systems
               </Badge>
@@ -129,6 +130,7 @@ export default function Home() {
             <div className="relative flex items-center justify-center">
               <div className="pointer-events-none absolute inset-0 -z-10 bg-[conic-gradient(from_180deg_at_50%_50%,rgba(248,113,113,0.16),rgba(217,70,239,0.18),rgba(139,92,246,0.2),transparent)] blur-3xl" />
               <div className="relative grid w-full max-w-md grid-cols-2 gap-3">
+                {/* Animated capability tiles give the hero a quick visual summary of focus areas. */}
                 {[
                   "Agentic AI Systems",
                   "Applied ML",
@@ -218,6 +220,7 @@ export default function Home() {
               description="A sample of AI systems, startup products, and applied ML work spanning agentic systems, healthcare, document intelligence, and consumer experiences."
             />
             <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+              {/* Cards are driven from the shared project list above so content updates stay in one place. */}
               {projects.map((project) => (
                 <ProjectCard key={project.title} {...project} />
               ))}
@@ -324,6 +327,7 @@ export default function Home() {
               description="A mix of industry ML work, founder journeys, and structured training in AI and entrepreneurship."
             />
             <div className="relative border-l border-white/10 pl-4">
+              {/* A lightweight timeline makes career milestones readable without adding a heavier layout. */}
               <ol className="space-y-6">
                 <TimelineItem
                   title="Bosch"
@@ -364,6 +368,7 @@ export default function Home() {
               description="Themes that capture how I work, what I build, and where I add the most value."
             />
             <div className="grid gap-4 md:grid-cols-3">
+              {/* These cards summarize recurring strengths instead of listing another chronology. */}
               <HighlightCard
                 title="Industry ML Experience"
                 description="Hands-on work deploying ML systems in environments where reliability and explainability matter."
@@ -394,6 +399,7 @@ export default function Home() {
 
         {/* Contact CTA */}
         <Section id="contact">
+          {/* The closing CTA is intentionally compact so the user ends on a single clear action area. */}
           <div className="mx-auto max-w-3xl rounded-3xl border border-white/10 bg-gradient-to-br from-[#0b1120] via-[#020617] to-[#020617] p-8 text-center shadow-[0_0_80px_rgba(248,113,113,0.35)]">
             <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
               Let&apos;s Build Something Impactful
@@ -444,4 +450,3 @@ export default function Home() {
     </div>
   );
 }
-

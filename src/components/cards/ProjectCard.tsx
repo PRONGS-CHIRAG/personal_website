@@ -21,6 +21,7 @@ export function ProjectCard({
   return (
     <div
       className={cn(
+        // The hover lift helps featured work feel interactive without changing the information density.
         "group flex flex-col justify-between rounded-2xl border border-white/10 bg-white/5 p-5 text-left shadow-[0_0_40px_rgba(0,0,0,0.6)] backdrop-blur-md transition-transform transition-shadow hover:-translate-y-1 hover:shadow-[0_0_80px_rgba(248,113,113,0.25)]",
         className
       )}
@@ -46,6 +47,7 @@ export function ProjectCard({
       </div>
       <div className="mt-4">
         {github && (
+          // External links open in a new tab so visitors do not lose their place on the portfolio.
           <a href={github} target="_blank" rel="noopener noreferrer">
             <Button variant="secondary" size="sm" className="w-max">
               <span>View Project Code</span>

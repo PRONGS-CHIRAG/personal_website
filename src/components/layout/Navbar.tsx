@@ -4,12 +4,12 @@ import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
 
+// Keeping nav content in one array makes section order and labels easy to maintain.
 const NAV_ITEMS = [
   { label: "Home", href: "#home" },
   { label: "Projects", href: "#projects" },
   { label: "Ventures", href: "#ventures" },
   { label: "About", href: "#about" },
-  { label: "Resume", href: "#resume" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -17,6 +17,7 @@ export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
+    // The header slightly changes its blur treatment once the page has moved off the top.
     const handler = () => {
       setScrolled(window.scrollY > 24);
     };
@@ -32,6 +33,7 @@ export function Navbar() {
         scrolled ? "backdrop-blur-xl" : "backdrop-blur-sm"
       )}
     >
+      {/* The nav uses a single centered pill so the page keeps a clean, floating chrome. */}
       <nav className="flex w-full max-w-6xl items-center justify-between rounded-full border border-white/10 bg-[#050510]/70 px-4 py-2.5 shadow-lg shadow-black/40">
         <div className="text-sm font-semibold tracking-tight text-zinc-50 sm:text-base">
           Chirag N Vijay
