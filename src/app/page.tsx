@@ -12,13 +12,7 @@ import { TimelineItem } from "@/components/cards/TimelineItem";
 import { HighlightCard } from "@/components/cards/HighlightCard";
 
 const projects = [
-  {
-    title: "ZestLearn",
-    tagline: "AI-driven consultant for Pharma & Life Science SMEs",
-    description:
-      "Reducing uncertainty in AI adoption through intelligent workflows and collective learning concepts.",
-    tags: ["LLMs", "Agentic AI", "RAG", "Product Strategy"],
-  },
+  
   {
     title: "MedAssist MAS",
     tagline: "Multi-agent healthcare triage assistant with red-flag detection",
@@ -40,20 +34,7 @@ const projects = [
       "Understands food imagery to provide nutritional insights and contextual recommendations.",
     tags: ["Computer Vision", "Nutrition AI", "LLMs", "Product"],
   },
-  {
-    title: "Bosch Applied ML",
-    tagline: "Acoustic intelligence and applied ML at scale",
-    description:
-      "Signal analysis and explainable ML systems deployed in real-world industrial environments.",
-    tags: ["Audio ML", "XAI", "Applied ML"],
-  },
-  {
-    title: "Afterz",
-    tagline: "Social platform for safer nightlife & faster connections",
-    description:
-      "Consumer venture focused on accessibility, safety, and meaningful social discovery.",
-    tags: ["Startup", "Consumer App", "UX", "Product"],
-  },
+  
 ];
 
 export default function Home() {
