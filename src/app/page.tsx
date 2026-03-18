@@ -96,7 +96,9 @@ export default function Home() {
                 into real-world impact.
               </p>
               <div className="mt-8 flex flex-wrap items-center gap-3">
-                <Button size="lg">View Projects</Button>
+                <a href="#projects">
+                  <Button size="lg">View Projects</Button>
+                </a>
                 <Button variant="secondary" size="lg">
                   Download Resume
                 </Button>
