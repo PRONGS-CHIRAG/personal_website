@@ -99,9 +99,7 @@ export default function Home() {
                 <a href="#projects">
                   <Button size="lg">View Projects</Button>
                 </a>
-                <Button variant="secondary" size="lg">
-                  Download Resume
-                </Button>
+                
               </div>
               <div className="mt-6 flex flex-wrap items-center gap-4 text-xs text-zinc-400">
                 <span className="font-medium text-zinc-300">Connect</span>
