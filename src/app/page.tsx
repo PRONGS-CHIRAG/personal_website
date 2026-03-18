@@ -19,6 +19,7 @@ const projects = [
     description:
       "Supports clinicians with symptom reasoning, guided flows, and safety-aware recommendations.",
     tags: ["AutoGen", "Healthcare AI", "Multi-Agent", "Gradio"],
+    github : "https://github.com/PRONGS-CHIRAG/MedAssist-MAS"
   },
   {
     title: "DocChat",
@@ -26,6 +27,7 @@ const projects = [
     description:
       "Retrieval, reasoning, and verification agents for reliable document intelligence and auditability.",
     tags: ["RAG", "LangChain", "LLMs", "Vector DB"],
+    github : "https://github.com/PRONGS-CHIRAG/Docchat"
   },
   {
     title: "AI NourishBot",
@@ -33,6 +35,7 @@ const projects = [
     description:
       "Understands food imagery to provide nutritional insights and contextual recommendations.",
     tags: ["Computer Vision", "Nutrition AI", "LLMs", "Product"],
+    github : "https://github.com/PRONGS-CHIRAG/NourishBot---AI-Nutritionist"
   },
   {
     title: "PrepAI : Interview Prep MAS",
@@ -40,13 +43,15 @@ const projects = [
     description:
       "A multi-agent system that simulates interview workflows, evaluates responses, and provides structured preparation support for technical and behavioral interviews.",
     tags: ["Multi-Agent", "Interview AI", "LLMs", "Evaluation", "Career Tech"],
+    github:"https://github.com/PRONGS-CHIRAG/InterviewPrep"
   },
   {
     title: "Speech Analyzer",
     tagline: "Audio and speech intelligence system",
     description:
-      "A machine learning project focused on extracting meaningful insights from speech and audio signals using signal processing, feature engineering, and predictive modeling techniques.",
+      "An end-to-end AI-powered meeting assistant that transcribes meeting or earnings-call audio, normalizes financial product terminology, and automatically generates meeting minutes and actionable task lists using state-of-the-art speech recognition and large language models. Built with Whisper, IBM watsonx, LLaMA, LangChain, and Gradio. ",
     tags: ["Audio ML", "Signal Processing", "Speech Analysis", "Python", "ML"],
+    github: "https://github.com/PRONGS-CHIRAG/Speech_Analyzer_AI"
   },
   {
     title: "Job Applying Buddy",
@@ -54,6 +59,7 @@ const projects = [
     description:
       "An agentic job application assistant that helps tailor resumes, generate cover letters, and streamline personalized application workflows for different roles.",
     tags: ["Agentic AI", "CrewAI", "Resume AI", "Supabase", "Automation"],
+    github : "https://github.com/PRONGS-CHIRAG/Job_Application_MAS"
   },
   {
     title: "Jazz Music Generation LSTM",
@@ -61,6 +67,7 @@ const projects = [
     description:
       "A sequence modeling project that uses recurrent neural networks to learn musical structure and generate jazz-inspired melodies from training data.",
     tags: ["Deep Learning", "LSTM", "Generative AI", "Music AI", "PyTorch"],
+    github : "https://github.com/PRONGS-CHIRAG/Jazz-Music-Generation"
   },
 ];
 
